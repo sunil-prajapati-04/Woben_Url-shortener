@@ -10,7 +10,7 @@ export const urlShortener = async(req,res)=>{
         if(!originalUrl || !originalUrl.startsWith("https://")){
             return res.status(404).json({message:"Please Provide valid URL"});
         }
-        const defaultUrl = "http://localhost:9000/woben"
+        const defaultUrl = "http://localhost:5000/woben"
         const shortendUrl = `${defaultUrl}/${shortId}`;
         const expiresAt = Date.now() + (6 * 24 * 60 * 60 * 1000); //6 Days
         const newUrl = new URL({

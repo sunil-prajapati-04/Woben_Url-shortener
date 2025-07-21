@@ -5,7 +5,7 @@ const urlSchema  = new mongoose.Schema({
     userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"urlUser",
-        default:uuidv4()
+        // default:uuidv4()
     },
     originalUrl:{
         type:String

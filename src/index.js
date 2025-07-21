@@ -46,7 +46,7 @@ app.use(passport.session());
 
 
 app.use('/woben/auth',authRoutes);
-app.use('/woben/url',urlRoutes);
+app.use('/woben',urlRoutes);
 
 
 
